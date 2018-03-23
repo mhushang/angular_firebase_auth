@@ -12,6 +12,10 @@ export class SignupComponent {
   constructor(public af: AngularFire, private router: Router) {
 
   }
+
+  email = null;
+  password = null;
+
   onSubmit(formData) {
     if (formData.valid) {
       console.log(formData.value);

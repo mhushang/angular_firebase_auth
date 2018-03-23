@@ -18,6 +18,9 @@ export class LoginComponent {
     });
   }
 
+  email = null;
+  password = null;
+
   onSubmit(formData) {
     if (formData.valid) {
       console.log(formData.value);
